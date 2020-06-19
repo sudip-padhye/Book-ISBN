@@ -1,8 +1,6 @@
-# Book-ISBN
-ISBN Verifier
+# Book-ISBN (ISBN Verifier & Generator)
 
-Problem Statement:
- 
+## Problem Statement:
 An ISBN (International Standard Book Number) is a ten digit code that uniquely identifies a book. The first 9 digits are used to represent the book and the 10th digit is used to ensure that the ISBN is correct. To validate the ISBN number, calculate a sum that is 10 times the first digit plus 9 times the second digit plus 8 times the third digit ... all the way until you add 1 times the last digit. If the sum is divisible by 11, then the 10 digit code is a valid ISBN number. 
 
 For example 1111456291 is a valid ISBN, because
@@ -15,12 +13,13 @@ For example, 156881111X is a valid ISBN, because
 
 You have to write a program to fill in the missing digit from a given ISBN number where the missing digit is represented as '?'. The missing digit should be a value between 0 and 9 or 'X' (X represents 10)
 
+## Working
 The program has 3 options -
 •	Validate ISBN
 •	Determine the missing character
 •	Generate an ISBN
 
-1.Validate ISBN-
+### 1.Validate ISBN-
 
 Takes an ISBN as input and checks for its validity.
 Eg-
@@ -30,7 +29,7 @@ Eg-
 2. Enter Book ISBN:6546873850
    Valid ISBN
 
-2.Determine the missing character-
+### 2.Determine the missing character-
 
 Fetches a missing character in the given ISBN. The missing character is displayed using "?" mark.
 Input Format
@@ -41,7 +40,7 @@ Output Format
 •         The length of the output field defined in the program should be 1.
 •         If a suitable value for '?' cannot be found which makes the ISBN valid, then the text 'NO SOLUTION POSSIBLE' should be displayed as output.
  
-3.Generate an ISBN-
+### 3.Generate an ISBN-
 Generates a random valid ISBN using rand( ) function. During generation, the first 9 digits are generated randomly and then to make it divisible by 11, the last character is assigned in the range 0-X.
 Eg-
 1.The generated ISBN is:8345957684
